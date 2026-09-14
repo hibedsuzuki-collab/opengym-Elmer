@@ -912,4 +912,12 @@ h4.sec{
   #timer.rest .head{flex:1;min-width:0}
   .exmedia img{height:380px}
   .hm-wrap{display:flex;flex-direction:column;align-items:center}
+/* Ocultar la insignia flotante de Netlify */
+iframe#netlify-badge, 
+div:has(> iframe#netlify-badge) {
+  display: none !important;
+  visibility: hidden !important;
+  opacity: 0 !important;
+  pointer-events: none !important;
+}
 }
